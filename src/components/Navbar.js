@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -12,11 +13,11 @@ const Navbar = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 1, text: "Domů" },
-    { id: 2, text: "O nás" },
-    { id: 3, text: "Ordinační doba" },
-    { id: 4, text: "Kontakt" },
-    { id: 5, text: "Contact" },
+    { id: 1, text: "Domů", route: "/" },
+    { id: 2, text: "O nás", route: "o_nas" },
+    { id: 3, text: "Ordinační doba", route: "ordinacni_doba" },
+    { id: 4, text: "Kontakt", route: "kontakt" },
+    { id: 5, text: "Contact", route: "contact" },
   ];
   return (
     <div className="bg-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
@@ -26,12 +27,13 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
         {navItems.map((item) => (
-          <li
+          <Link
+            to={item.route}
             key={item.id}
             className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
           >
             {item.text}
-          </li>
+          </Link>
         ))}
       </ul>
 
@@ -53,12 +55,13 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
-          <li
+          <Link
+            to={item.route}
             key={item.id}
             className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
           >
             {item.text}
-          </li>
+          </Link>
         ))}
       </ul>
     </div>
