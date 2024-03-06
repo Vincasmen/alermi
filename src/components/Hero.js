@@ -41,16 +41,9 @@ const Hero = () => {
             <div className="flex items-center">
               <a
                 href="/"
-                className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                className="rounded-xl bg-gradient-to-br from-[#4481EB] to-[#04BEFE] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#4481EB]/50"
               >
-                Get started
-              </a>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
-              >
-                Learn more
+                Objednejte se
               </a>
             </div>
           </div>
