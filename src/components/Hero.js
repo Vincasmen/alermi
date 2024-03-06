@@ -23,20 +23,19 @@ const Hero = () => {
         <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-              Brand new
+              Alermi
             </p>
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Everything you
-              <br className="hidden md:block" />
-              can imagine{" "}
+              Vítejte na stránkách
+              <br className="" />
+              alergologické ordinace{" "}
               <span className="inline-block text-deep-purple-accent-400">
-                is real
+                Alermi Brno
               </span>
             </h2>
             <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+              S naším týmem alergologů a moderní diagnostikou vám pomůžeme
+              identifikovat příčiny vašich obtíží a navrhnout efektivní léčbu.
             </p>
             <div className="flex items-center">
               <a
@@ -44,6 +43,13 @@ const Hero = () => {
                 className="rounded-xl bg-gradient-to-br from-[#4481EB] to-[#04BEFE] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#4481EB]/50"
               >
                 Objednejte se
+              </a>
+              <a
+                href="/"
+                aria-label=""
+                className="ml-5 rounded-xl bg-white px-5 py-3 text-base font-medium text-black outline outline-color-slate-500 outline-1 transition duration-200 hover:shadow-lg hover:shadow-[#838383]/50"
+              >
+                Otevírací doba
               </a>
             </div>
           </div>
