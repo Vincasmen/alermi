@@ -15,7 +15,7 @@ const Hero = () => {
             <path d="M50 0H100L50 100H0L50 0Z" />
           </svg>
           <img
-            className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+            className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full "
             src={Rostlina_1}
             alt=""
           />
