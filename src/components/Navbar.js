@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
   return (
     <nav className="bg-black w-full">
-      <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
+      <div className="navbar-container flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         {/* Logo */}
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">ALERMI</h1>
 
