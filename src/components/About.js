@@ -17,7 +17,7 @@ const About = () => {
             <br />
           </p>
         </div>
-        <div className="w-full lg:w-5/12 ">
+        <div className="w-full m-auto md:w-2/3 lg:w-5/12 ">
           <img
             className="w-full h-full"
             src={About_pic1}
