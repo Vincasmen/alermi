@@ -9,14 +9,24 @@ const Openinghours = () => {
           Otevírací doba
         </h1>
       </div>
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md">
-        <ul className="text-center m-auto">
-          <li>Pondělí</li>
-          <li>Úterý</li>
-          <li>Středa</li>
-          <li>Čtvrtek</li>
-          <li>Pátek</li>
-          <li>Sobota-Neděle</li>
+      <div className="flex  justify-center shadow-lg rounded-md">
+        <ul className="text-center m-auto text-neutral-600">
+          <li className="bg-neutral-200 rounded-sm ">Pondělí 12:00–18:00</li>
+          <li className="bg-neutral-100 my-2 rounded-sm">
+            Úterý 8:00–12:30, 13:00–15:00
+          </li>
+          <li className="bg-neutral-200 rounded-sm">
+            Středa 8:00–12:30, 13:00–15:00
+          </li>
+          <li className="bg-neutral-100 my-2 rounded-sm">
+            Čtvrtek 7:00–14:00 <br /> (7-8: odběry, vakcinace, objednaní
+            pacienti)
+          </li>
+          <li className="bg-neutral-200 rounded-sm">Pátek 8:00–13:00</li>
+          <li className="bg-neutral-100 mt-2 rounded-sm">
+            {" "}
+            Sobota - Neděle ZAVŘENO
+          </li>
         </ul>
       </div>
     </div>
