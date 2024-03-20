@@ -26,12 +26,12 @@ const Navbar = () => {
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">ALERMI</h1>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex ">
           {navItems.map((item) => (
             <Link
               to={item.route}
               key={item.id}
-              className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+              className="p-4 text-nowrap hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
             >
               {item.text}
             </Link>
