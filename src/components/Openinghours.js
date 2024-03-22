@@ -2,33 +2,62 @@ import React from "react";
 
 const Openinghours = () => {
   return (
-    <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-      <div className="flex flex-col lg:flex-row justify-between gap-8"></div>
-      <div className="w-full lg:w-5/12 flex flex-col justify-center">
-        <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
-          Otevírací doba
-        </h1>
-      </div>
-      <div className="flex  justify-center shadow-lg rounded-md">
-        <ul className="text-center m-auto text-neutral-600">
-          <li className="bg-neutral-200 rounded-sm ">Pondělí 12:00–18:00</li>
-          <li className="bg-neutral-100 my-2 rounded-sm">
-            Úterý 8:00–12:30, 13:00–15:00
-          </li>
-          <li className="bg-neutral-200 rounded-sm">
-            Středa 8:00–12:30, 13:00–15:00
-          </li>
-          <li className="bg-neutral-100 my-2 rounded-sm">
-            Čtvrtek 7:00–14:00 <br /> (7-8: odběry, vakcinace, objednaní
-            pacienti)
-          </li>
-          <li className="bg-neutral-200 rounded-sm">Pátek 8:00–13:00</li>
-          <li className="bg-neutral-100 mt-2 rounded-sm">
-            {" "}
-            Sobota - Neděle ZAVŘENO
-          </li>
-        </ul>
-      </div>
+    <div className="max-w-xl mx-auto ">
+      <h2 className="text-2xl font-bold mb-4 text-center">
+        Otevírací doba ordinace
+      </h2>
+      <table className="w-full border-collapse border border-gray-300 shadow-lg">
+        <thead>
+          <tr className="bg-gray-200">
+            <th className="border border-gray-300 px-4 py-2">Den</th>
+            <th className="border border-gray-300 px-4 py-2">Otevřeno</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2 text-center">
+              Pondělí
+            </td>
+            <td className="border border-gray-300 px-4 py-2">12:00–18:00</td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2 text-center">
+              Úterý
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              8:00–12:30, 13:00–15:00
+            </td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2 text-center">
+              Středa
+            </td>
+            <td className="border border-gray-300 px-4 py-2">
+              8:00–12:30, 13:00–15:00
+            </td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2 text-center">
+              Čtvrtek
+            </td>
+            <td className="border border-gray-300 px-4 py-2 text-nowrap">
+              7:00–14:00 (7:00-8:00 odběry, vakcinace, objednaní pacienti)
+            </td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2 text-center">
+              Pátek
+            </td>
+            <td className="border border-gray-300 px-4 py-2">8:00–13:00</td>
+          </tr>
+          <tr>
+            <td className="border border-gray-300 px-4 py-2 text-nowrap text-center">
+              Sobota - Neděle
+            </td>
+            <td className="border border-gray-300 px-4 py-2">ZAVŘENO</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
