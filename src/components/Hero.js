@@ -1,5 +1,6 @@
 import React from "react";
 import Rostlina_1 from "../assets/Rostlina_1.jpeg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
             <path d="M50 0H100L50 100H0L50 0Z" />
           </svg>
           <img
-            className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full "
+            className="object-cover w-full h-56 rounded shadow-lg lg:rounded-sm lg:shadow-none md:h-96 lg:h-full "
             src={Rostlina_1}
             alt=""
           />
@@ -38,19 +39,19 @@ const Hero = () => {
               identifikovat příčiny vašich obtíží a navrhnout efektivní léčbu.
             </p>
             <div className="flex items-center">
-              <a
-                href="/"
+              <Link
+                to={"openinghours"}
                 className="rounded-xl bg-gradient-to-br from-[#4481EB] to-[#04BEFE] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#4481EB]/50"
               >
                 Objednejte se
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to={"/openinghours"}
                 aria-label=""
                 className="ml-5 rounded-xl bg-white px-5 py-3 text-base font-medium text-black outline outline-color-slate-500 outline-1 transition duration-200 hover:shadow-lg hover:shadow-[#838383]/50"
               >
                 Otevírací doba
-              </a>
+              </Link>
             </div>
           </div>
         </div>

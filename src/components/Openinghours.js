@@ -2,7 +2,10 @@ import React from "react";
 
 const Openinghours = () => {
   return (
-    <div className="max-w-xl mx-auto ">
+    <div
+      id="openinghours"
+      className="flex flex-col m-auto max-w-xl mx-auto py-16"
+    >
       <h2 className="text-2xl font-bold mb-4 text-center">
         Otevírací doba ordinace
       </h2>
@@ -40,7 +43,7 @@ const Openinghours = () => {
             <td className="border border-gray-300 px-4 py-2 text-center">
               Čtvrtek
             </td>
-            <td className="border border-gray-300 px-4 py-2 text-nowrap">
+            <td className="border border-gray-300 px-4 py-2 md:text-nowrap">
               7:00–14:00 (7:00-8:00 odběry, vakcinace, objednaní pacienti)
             </td>
           </tr>

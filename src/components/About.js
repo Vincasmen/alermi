@@ -3,7 +3,7 @@ import About_pic1 from "../assets/About_pic1.jpeg";
 
 const About = () => {
   return (
-    <div className="about-container 2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+    <div className="about-container 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
       <div className="flex flex-col lg:flex-row-reverse m-auto justify-between">
         <div className="w-full lg:w-5/12 flex flex-col justify-center ">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="w-full md:w-2/3 lg:w-5/12">
           <img
-            className="w-full h-full rounded-md"
+            className="clip w-full h-full rounded-md"
             src={About_pic1}
             alt="A group of People"
           />
@@ -39,7 +39,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-full lg:w-5/12 lg:pt-8 flex flex-col shadow-lg md:flex-row justify-center gap-4">
-          <div className="p-4 pb-6 flex flex-col items-center">
+          <div className="p-4 pb-6 flex flex-col items-center flex-shrink-0">
             <img
               className="md:block hidden rounded-full"
               src="https://i.ibb.co/FYTKDG6/Rectangle-118-2.png"
@@ -54,7 +54,7 @@ const About = () => {
               MUDr. Ivana Minaříková
             </p>
           </div>
-          <div className="p-4 pb-6 flex flex-col items-center">
+          <div className="p-4 pb-6 flex flex-col items-center flex-shrink-0">
             <img
               className="md:block hidden rounded-full"
               src="https://i.ibb.co/fGmxhVy/Rectangle-119.png"
