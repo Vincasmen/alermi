@@ -127,10 +127,10 @@ export default function App() {
 
       {/* <!--Copyright section--> */}
       <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-        <span>© 2023 Copyright:</span>
+        <span>© 2023 Copyright: </span>
         <a
           className="font-semibold text-neutral-600 dark:text-neutral-400"
-          href="https://tw-elements.com/"
+          href="/"
         >
           Jan Vincourek
         </a>
