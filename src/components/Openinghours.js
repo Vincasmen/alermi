@@ -3,7 +3,7 @@ import React from "react";
 const Openinghours = () => {
   return (
     <div
-      id="openinghours"
+      id="openingHours"
       className="flex flex-col m-auto max-w-xl mx-auto py-16"
     >
       <h2 className="text-2xl font-bold mb-4 text-center">

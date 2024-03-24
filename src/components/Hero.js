@@ -1,8 +1,12 @@
 import React from "react";
 import Rostlina_1 from "../assets/Rostlina_1.jpeg";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const scrollToOpeningHours = () => {
+    const openingHoursSection = document.getElementById("openingHours");
+    openingHoursSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <div className="hero-container relative m-auto flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full lg:max-w-[1240px]">
@@ -39,19 +43,18 @@ const Hero = () => {
               identifikovat příčiny vašich obtíží a navrhnout efektivní léčbu.
             </p>
             <div className="flex items-center">
-              <Link
-                to={"openinghours"}
+              <a
+                href="/"
                 className="rounded-xl bg-gradient-to-br from-[#4481EB] to-[#04BEFE] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#4481EB]/50"
               >
                 Objednejte se
-              </Link>
-              <Link
-                to={"/openinghours"}
-                aria-label=""
+              </a>
+              <button
+                onClick={scrollToOpeningHours}
                 className="ml-5 rounded-xl bg-white px-5 py-3 text-base font-medium text-black outline outline-color-slate-500 outline-1 transition duration-200 hover:shadow-lg hover:shadow-[#838383]/50"
               >
                 Otevírací doba
-              </Link>
+              </button>
             </div>
           </div>
         </div>
