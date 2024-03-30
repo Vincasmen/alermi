@@ -1,11 +1,21 @@
 import React from "react";
-import rbp_logo from "../assets/Insurance_comp/rbp_logo.jpg";
+import Data from "../data"; // Importujeme komponentu Data
 
 const Insurance = () => {
   return (
-    <div className="insurance-container 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-      <div>
-        <img src={rbp_logo} alt="RBP_logo" />
+    <div className="container mx-auto py-9 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Mapování dat z komponenty Data */}
+        {Data.map((insuranceItem) => (
+          <div key={insuranceItem.id} className="flex flex-col items-center">
+            <img
+              src={insuranceItem.image}
+              alt={insuranceItem.title}
+              className="w-32 h-32 object-contain mb-2"
+            />
+            <p>{insuranceItem.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
