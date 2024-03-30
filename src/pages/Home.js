@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Openinghours from "../components/Openinghours";
 import Separator from "../components/Separator";
+import Insurance from "../components/Insurance";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About />
       <Separator />
       <Openinghours />
+      <Insurance />
     </div>
   );
 };
