@@ -3,7 +3,7 @@ import { IoArrowUpOutline } from "react-icons/io5";
 
 export default function App() {
   return (
-    <footer className="top-20 relative m-auto bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+    <footer className="font-display top-20 relative m-auto bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
       <div className="flex items-center bg-neutral-500 cursor-pointer justify-center m-auto text-center w-10 h-10 rounded-full text-lg start-0">
         <IoArrowUpOutline />
       </div>
