@@ -29,7 +29,12 @@ export default function App() {
               Jak se k nám dostanete
             </h6>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">
+              <a
+                href="https://maps.app.goo.gl/du9idrKthRQXDE7K7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-neutral-600 dark:text-neutral-200"
+              >
                 Zastávka tramvají č. 3 , 5 , 9 , 11 - zastávka Jugoslávská přímo
                 u Domu zdraví
                 <br />
