@@ -18,37 +18,43 @@ const Openinghours = () => {
         </thead>
         <tbody className="text-center">
           <tr>
-            <td className="border border-gray-300 px-4 py-2 ">Pondělí</td>
-            <td className="border border-gray-300 px-4 py-2">12:00–18:00</td>
+            <td className="border border-gray-300 px-4 py-2">Pondělí</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm sm:text-base">
+              12:00–18:00
+            </td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2 ">Úterý</td>
-            <td className="border border-gray-300 px-4 py-2">
+            <td className="border border-gray-300 px-4 py-2">Úterý</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm sm:text-base">
               8:00–12:30, 13:00–15:00
             </td>
           </tr>
           <tr>
-            <td className="border border-gray-300 px-4 py-2 ">Středa</td>
-            <td className="border border-gray-300 px-4 py-2">
+            <td className="border border-gray-300 px-4 py-2">Středa</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm sm:text-base">
               8:00–12:30, 13:00–15:00
             </td>
           </tr>
           <tr>
             <td className="border border-gray-300 px-4 py-2">Čtvrtek</td>
-            <td className="border border-gray-300 px-4 py-2 ">
+            <td className="border border-gray-300 px-4 py-2 text-sm sm:text-base">
               7:00–14:00 <br /> (7:00-8:00 odběry, vakcinace, objednaní
               pacienti)
             </td>
           </tr>
           <tr>
             <td className="border border-gray-300 px-4 py-2">Pátek</td>
-            <td className="border border-gray-300 px-4 py-2">8:00–13:00</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm sm:text-base">
+              8:00–13:00
+            </td>
           </tr>
           <tr>
             <td className="border border-gray-300 px-4 py-2 text-nowrap">
               Sobota - Neděle
             </td>
-            <td className="border border-gray-300 px-4 py-2">ZAVŘENO</td>
+            <td className="font-action border border-gray-300 px-4 py-2">
+              ZAVŘENO
+            </td>
           </tr>
         </tbody>
       </table>

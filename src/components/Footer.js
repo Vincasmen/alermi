@@ -64,7 +64,8 @@ export default function App() {
             </p>
             <p className="mb-4">
               <a className="text-neutral-600 dark:text-neutral-200">
-                Čtvrtek 7:00–14:00 (7-8: odběry,vakcinace, obj.pac.)
+                Čtvrtek 7:00–14:00 <br /> (7-8: odběry, vakcinace, objednaní
+                pacienti)
               </a>
             </p>
             <p className="mb-4">
@@ -135,7 +136,9 @@ export default function App() {
         <span>© 2024 Copyright: </span>
         <a
           className="font-semibold text-neutral-600 dark:text-neutral-400"
-          href="/"
+          href="https://portfolio-vincourek.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Jan Vincourek
         </a>

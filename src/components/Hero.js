@@ -22,7 +22,7 @@ const Hero = () => {
           <img
             className="object-cover w-full h-56 rounded shadow-lg lg:rounded-sm lg:shadow-none md:h-96 lg:h-full "
             src={Rostlina_1}
-            alt=""
+            alt="Rostlina"
           />
         </div>
         <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
             <h2 className=" mb-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
               Vítejte na stránkách
-              <br className="" />
+              <br />
               alergologické ordinace{" "}
               <span className="inline-block text-deep-purple-accent-400">
                 Alermi Brno

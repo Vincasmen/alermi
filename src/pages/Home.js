@@ -4,6 +4,7 @@ import About from "../components/About";
 import Openinghours from "../components/Openinghours";
 import Separator from "../components/Separator";
 import Insurance from "../components/Insurance";
+import FAQ from "../components/FAQ";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <About />
       <Separator />
+      <FAQ />
       <Openinghours />
       <Insurance />
     </div>
