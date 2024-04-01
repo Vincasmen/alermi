@@ -5,11 +5,11 @@ const About = () => {
   return (
     <div className=" about-container 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
       <div className="flex flex-col lg:flex-row-reverse m-auto justify-between">
-        <div className="w-full lg:w-5/12 flex flex-col justify-center ">
-          <h1 className="font-action text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
+        <div className="w-11/12 md:w-3/5 m-auto lg:m-0 lg:w-5/12 flex flex-col justify-center">
+          <h1 className="font-action text-3xl lg:text-4xl font-bold leading-9 text-gray-800">
             O nás
           </h1>
-          <p className=" font-display font-normal text-base leading-6 text-gray-600 ">
+          <p className="py-4 font-display font-normal text-base leading-6 text-gray-600 ">
             Zabýváme se diagnostikou a léčbou všech alergických onemocnění, jako
             jsou alergická rýma, alergický zánět spojivek, bronchiální astma,
             potravinové alergie, alergické kožní projevy, alergické projevy po
@@ -17,7 +17,7 @@ const About = () => {
             <br />
           </p>
         </div>
-        <div className="w-full md:w-2/3 lg:w-5/12">
+        <div className="m-auto w-11/12  md:w-3/5 lg:m-0 lg:w-5/12">
           <img
             className="clip w-full h-full rounded-md"
             src={About_pic1}
@@ -27,7 +27,7 @@ const About = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-between pt-12">
-        <div className="w-full lg:w-5/12 flex flex-col justify-center">
+        <div className="w-11/12 md:w-3/5 m-auto lg:m-0 lg:w-5/12 flex flex-col justify-center">
           <h1 className="font-action text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
             V ordinaci se na Vás těší
           </h1>
@@ -38,7 +38,7 @@ const About = () => {
             Specifické místo zaujímá alergenová imunoterapie.
           </p>
         </div>
-        <div className="w-full lg:w-5/12 lg:pt-8 flex flex-col shadow-lg md:flex-row justify-center gap-4">
+        <div className="w-full lg:w-5/12 lg:pt-8 flex flex-col  rounded-md md:flex-row justify-center gap-4">
           <div className="p-4 pb-6 flex flex-col items-center flex-shrink-0">
             <img
               className="md:block hidden rounded-full"
