@@ -9,8 +9,8 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="font-display hero-container relative m-auto flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full lg:max-w-[1240px]">
-        <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+      <div className="font-action hero-container relative m-auto flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full lg:max-w-[1240px]">
+        <div className="hidden lg:block inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
           <svg
             className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
             viewBox="0 0 100 100"
@@ -38,14 +38,14 @@ const Hero = () => {
                 Alermi Brno
               </span>
             </h2>
-            <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+            <p className="font-display pr-5 mb-5 text-base text-gray-700 md:text-lg">
               S naším týmem alergologů a moderní diagnostikou vám pomůžeme
               identifikovat příčiny vašich obtíží a navrhnout efektivní léčbu.
             </p>
             <div className="flex items-center">
               <a
                 href="/"
-                className="rounded-xl bg-gradient-to-br from-[#4481EB] to-[#04BEFE] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#4481EB]/50"
+                className=" rounded-xl bg-gradient-to-br from-[#00df9a] to-[#86efac] px-5 py-3 text-base font-bold text-white transition duration-200 hover:shadow-lg hover:shadow-[#838383]/50"
               >
                 Objednejte se
               </a>

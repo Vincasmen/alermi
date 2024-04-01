@@ -23,7 +23,7 @@ const Insurance = () => {
                 className="w-48 h-32 object-contain mb-2 "
               />
             </a>
-            <p className="pb-6 font-medium text-center md:hidden">
+            <p className="font-display pb-6 font-medium text-center md:hidden">
               {insuranceItem.title}
             </p>
           </div>

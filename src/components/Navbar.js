@@ -20,7 +20,7 @@ const Navbar = () => {
     { id: 5, text: "Contact", route: "contact" },
   ];
   return (
-    <nav className=" font-display bg-black w-full">
+    <nav className=" font-action bg-black w-full">
       <div className="navbar-container flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         {/* Logo */}
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">ALERMI</h1>

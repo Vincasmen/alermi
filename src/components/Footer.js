@@ -13,19 +13,19 @@ export default function App() {
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* <!-- TW Elements section --> */}
           <div className="">
-            <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+            <h6 className="font-action mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
               Elektroniceké recepty
             </h6>
             <p>SMS žádost: 605 270 039</p>
             <p>e-mail: alergologie@alermi.cz</p>
-            <h6 className="mb-4 pt-3 flex items-center justify-center font-semibold uppercase md:justify-start">
+            <h6 className="font-action mb-4 pt-3 flex items-center justify-center font-semibold uppercase md:justify-start">
               Kontakt na lékaře
             </h6>
             <p>minarikova@alermi.cz</p>
           </div>
           {/* <!-- Products section --> */}
           <div className="">
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <h6 className="font-action mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Jak se k nám dostanete
             </h6>
             <p className="mb-4">
@@ -44,7 +44,7 @@ export default function App() {
           </div>
           {/* <!-- Useful links section --> */}
           <div className="">
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <h6 className="font-action mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Otevírací doba
             </h6>
             <p className="mb-4">
@@ -80,8 +80,8 @@ export default function App() {
           </div>
           {/* <!-- Contact section --> */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Contact
+            <h6 className="font-action mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Kontakty
             </h6>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <svg
@@ -131,8 +131,8 @@ export default function App() {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-        <span>© 2023 Copyright: </span>
+      <div className="font-action bg-neutral-200 p-6 text-center dark:bg-neutral-700">
+        <span>© 2024 Copyright: </span>
         <a
           className="font-semibold text-neutral-600 dark:text-neutral-400"
           href="/"

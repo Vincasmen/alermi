@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Montserrat"],
-        body: ['" Montserrat"'],
+        action: ["Prompt"],
+        display: ['"Roboto"'],
       },
     },
   },
