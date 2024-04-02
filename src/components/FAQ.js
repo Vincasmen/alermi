@@ -30,21 +30,22 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className="font-action hero-container relative m-auto flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full lg:max-w-[1240px]">
-      <div>
+    <div className=" FAQ-container relative m-auto flex flex-col px-4 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
+      <div className="gap-4 ">
         {FAQdata.map((faqData, index) => (
-          <div key={index} className="shadow-lg">
+          <div key={index} className="shadow-md p-2  my-4 rounded-md">
             <h1
-              className="font-bold text-lg cursor-pointer faq-question"
+              className="font-action text-center font-bold text-lg cursor-pointer faq-question bg-gradient-to-br from-[#00df9a] to-[#86efac] inline-block text-transparent bg-clip-text"
               onClick={() => toggleQuestion(index)}
             >
               {faqData.question}
             </h1>
             {activeQuestion === index && (
-              <div ref={answerRef} className="mt-2 faq-answer">
-                <ul>
-                  <li>{faqData.answer}</li>
-                </ul>
+              <div
+                ref={answerRef}
+                className="font-display mt-2 faq-answer bg-slate-50 rounded-md"
+              >
+                {faqData.answer}
               </div>
             )}
           </div>
