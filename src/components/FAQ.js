@@ -35,7 +35,7 @@ const FAQ = () => {
         {FAQdata.map((faqData, index) => (
           <div key={index} className="shadow-md p-2  my-4 rounded-md">
             <h1
-              className="font-action text-center font-bold text-lg cursor-pointer faq-question bg-gradient-to-br from-[#00df9a] to-[#86efac] inline-block text-transparent bg-clip-text"
+              className="font-action text-center font-bold text-lg cursor-pointer faq-question bg-gradient-to-br from-[#00df9a] to-[#86efac]"
               onClick={() => toggleQuestion(index)}
             >
               {faqData.question}

@@ -3,7 +3,10 @@ import About_pic1 from "../assets/About_pic1.jpeg";
 
 const About = () => {
   return (
-    <div className=" about-container 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+    <div
+      id="aboutUs"
+      className=" about-container 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 py-9 px-4"
+    >
       <div className="flex flex-col lg:flex-row-reverse m-auto justify-between">
         <div className="w-11/12 md:w-3/5 m-auto lg:m-0 lg:w-5/12 flex flex-col justify-center">
           <h1 className="font-action text-3xl lg:text-4xl font-bold leading-9 text-gray-800">

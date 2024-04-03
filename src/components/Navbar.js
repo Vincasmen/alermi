@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -11,30 +10,36 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const scrollToAboutUs = () => {
+    const aboutUsSection = document.getElementById("aboutUs");
+    aboutUsSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   // Array containing navigation items
   const navItems = [
     { id: 1, text: "Domů", route: "/" },
-    { id: 2, text: "O nás", route: "o_nas" },
-    { id: 3, text: "Ordinační doba", route: "ordinacni_doba" },
-    { id: 4, text: "Kontakt", route: "kontakt" },
-    { id: 5, text: "Contact", route: "contact" },
+    { id: 2, text: "O nás", route: "#o_nas", onClick: scrollToAboutUs },
+    { id: 3, text: "Ordinační doba", route: "#ordinacni_doba" },
+    { id: 4, text: "Kontakt", route: "#kontakt" },
+    { id: 5, text: "Contact", route: "#contact" },
   ];
+
   return (
-    <nav className=" font-action bg-black w-full">
+    <nav className="font-action bg-black w-full">
       <div className="navbar-container flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         {/* Logo */}
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">ALERMI</h1>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex ">
+        <ul className="hidden md:flex">
           {navItems.map((item) => (
-            <Link
-              to={item.route}
+            <li
               key={item.id}
               className="p-4 text-nowrap hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+              onClick={item.onClick} // Přidání onClick obsluhy události
             >
-              {item.text}
-            </Link>
+              <a href={item.route}>{item.text}</a>
+            </li>
           ))}
         </ul>
 
@@ -58,13 +63,13 @@ const Navbar = () => {
 
           {/* Mobile Navigation Items */}
           {navItems.map((item) => (
-            <Link
-              to={item.route}
+            <li
               key={item.id}
               className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+              onClick={item.onClick} // Přidání onClick obsluhy události
             >
-              {item.text}
-            </Link>
+              <a href={item.route}>{item.text}</a>
+            </li>
           ))}
         </ul>
       </div>
