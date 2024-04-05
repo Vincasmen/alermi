@@ -2,9 +2,9 @@ import React from "react";
 
 const Openinghours = () => {
   return (
-    <div
+    <section
       id="openingHours"
-      className=" flex flex-col px-4 m-auto w-full max-w-xl mx-auto py-16"
+      className=" flex flex-col h-screen px-4 m-auto w-full max-w-xl mx-auto py-16 gap-8"
     >
       <h2 className="font-action text-2xl font-bold mb-4 text-center">
         Otevírací doba ordinace
@@ -58,7 +58,23 @@ const Openinghours = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+      <div className="">
+        <p>
+          Prosíme o objednání po telefonické domluvě, telefonická domluva i v
+          případě akutních stavů.
+        </p>
+        <br />
+        <p>
+          Objednací termín se snažíme dodržet, bohužel dopředu nelze odhadnout
+          časovou náročnost předchozích vyšetření.
+        </p>
+        <br />
+        <p>
+          Nemůžete-li se dostavit na objednaný termín, prosíme o včasné
+          přeobjednání nebo zrušení termínu.
+        </p>
+      </div>
+    </section>
   );
 };
 
