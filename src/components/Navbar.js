@@ -15,11 +15,21 @@ const Navbar = () => {
     aboutUsSection.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToOpeningHours = () => {
+    const openingHoursSection = document.getElementById("openingHours");
+    openingHoursSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   // Array containing navigation items
   const navItems = [
     { id: 1, text: "Domů", route: "/" },
     { id: 2, text: "O nás", route: "#o_nas", onClick: scrollToAboutUs },
-    { id: 3, text: "Ordinační doba", route: "#ordinacni_doba" },
+    {
+      id: 3,
+      text: "Ordinační doba",
+      route: "#ordinacni_doba",
+      onClick: scrollToOpeningHours,
+    },
     { id: 4, text: "Kontakt", route: "#kontakt" },
     { id: 5, text: "Contact", route: "#contact" },
   ];
