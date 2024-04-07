@@ -5,7 +5,7 @@ export default function App() {
   return (
     <footer className="font-display top-20 relative m-auto bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
       <div className="flex items-center bg-neutral-500 cursor-pointer justify-center m-auto text-center w-10 h-10 rounded-full text-lg start-0">
-        <IoArrowUpOutline />
+        <IoArrowUpOutline className="pulsate-fwd" />
       </div>
 
       {/* <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. --> */}
