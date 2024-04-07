@@ -9,7 +9,7 @@ const Openinghours = () => {
       <h2 className="font-action text-2xl font-bold mb-4 text-center">
         Otevírací doba ordinace
       </h2>
-      <table className="font-display w-full border-collapse border border-gray-300 shadow-lg">
+      <table className="font-display w-full border-collapse border border-gray-300 shadow-md">
         <thead>
           <tr className="bg-gray-200">
             <th className="border border-gray-300 px-4 py-2">Den</th>

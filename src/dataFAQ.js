@@ -37,6 +37,33 @@ const insurance = [
       </div>
     ),
   },
+  {
+    id: 3,
+    question: "Užitečné odkazy",
+    answer: (
+      <ul className="font-display m-auto text-center">
+        <li>
+          <a
+            href="https://www.pylovasluzba.cz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pylová služba
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.pyly.cz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pyly
+          </a>
+        </li>
+        <li></li>
+      </ul>
+    ),
+  },
 ];
 
 export default insurance;

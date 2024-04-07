@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import FAQdata from "../dataFAQ";
-import { CiCirclePlus } from "react-icons/ci";
+import { FaPlus } from "react-icons/fa";
 
 const FAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -31,19 +31,19 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className="FAQ-container relative m-auto flex flex-col px-4 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
+    <div className="FAQ-container relative m-auto flex flex-col px-4 my-16 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
       <div className="gap-4 ">
         {FAQdata.map((faqData, index) => (
           <div key={index} className="shadow-md p-2  my-4 rounded-md ">
             <div className="flex justify-between flex-row m-auto items-center">
-              <CiCirclePlus className="mx-2 text-xl pulsate-fwd" />
+              <FaPlus className="relative mx-2 text-xl pulsate-fwd" />
               <h1
-                className="font-action text-center font-bold text-lg cursor-pointer faq-question "
+                className="font-action hover:underline text-center w-full font-bold text-lg cursor-pointer faq-question "
                 onClick={() => toggleQuestion(index)}
               >
                 {faqData.question}
               </h1>
-              <CiCirclePlus className="mx-2 text-xl pulsate-fwd" />
+              <FaPlus className="mx-2 text-xl pulsate-fwd" />
             </div>
             {activeQuestion === index && (
               <div
