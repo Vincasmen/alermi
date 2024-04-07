@@ -45,13 +45,13 @@ const Hero = () => {
             <div className="flex items-center">
               <a
                 href="/"
-                className=" rounded-xl bg-gradient-to-br from-[#00df9a] to-[#86efac] px-5 py-3 text-base font-bold text-white transition duration-200 hover:shadow-lg hover:shadow-[#838383]/50"
+                className=" rounded-xl bg-gradient-to-br from-[#00df9a] to-[#86efac] px-5 py-3 text-base font-bold text-white hover:scale-110 hover:shadow-lg transition ease-in-out duration-500 hover:shadow-[#838383]/50"
               >
                 Objednejte se
               </a>
               <button
                 onClick={scrollToOpeningHours}
-                className="ml-5 rounded-xl bg-white px-5 py-3 text-base font-medium text-black outline outline-color-slate-500 outline-1 transition duration-200 hover:shadow-lg hover:shadow-[#838383]/50"
+                className="ml-5 rounded-xl bg-white px-5 py-3 text-base font-medium text-black outline outline-color-slate-500 outline-1 hover:scale-110 hover:shadow-lg transition ease-in-out duration-500 hover:shadow-[#838383]/50"
               >
                 Otevírací doba
               </button>

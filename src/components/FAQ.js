@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import FAQdata from "../dataFAQ";
+import { CiCirclePlus } from "react-icons/ci";
 
 const FAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -30,20 +31,24 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className=" FAQ-container relative m-auto flex flex-col px-4 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
+    <div className="FAQ-container relative m-auto flex flex-col px-4 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
       <div className="gap-4 ">
         {FAQdata.map((faqData, index) => (
-          <div key={index} className="shadow-md p-2  my-4 rounded-md">
-            <h1
-              className="font-action text-center font-bold text-lg cursor-pointer faq-question bg-gradient-to-br from-[#00df9a] to-[#86efac]"
-              onClick={() => toggleQuestion(index)}
-            >
-              {faqData.question}
-            </h1>
+          <div key={index} className="shadow-md p-2  my-4 rounded-md ">
+            <div className="flex justify-between flex-row m-auto items-center">
+              <CiCirclePlus className="mx-2 text-xl pulsate-fwd" />
+              <h1
+                className="font-action text-center font-bold text-lg cursor-pointer faq-question "
+                onClick={() => toggleQuestion(index)}
+              >
+                {faqData.question}
+              </h1>
+              <CiCirclePlus className="mx-2 text-xl pulsate-fwd" />
+            </div>
             {activeQuestion === index && (
               <div
                 ref={answerRef}
-                className="font-display mt-2 faq-answer bg-slate-50 rounded-md"
+                className="font-display my-8 p-2 faq-answer  rounded-md transition-all duration-300"
               >
                 {faqData.answer}
               </div>

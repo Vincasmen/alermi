@@ -20,7 +20,7 @@ const Insurance = () => {
               <img
                 src={insuranceItem.image}
                 alt={insuranceItem.alt}
-                className="w-48 h-32 object-contain mb-2 "
+                className="w-48 h-32 object-contain mb-2 hover:scale-110 ease-in-out duration-300"
               />
             </a>
             <p className="font-display pb-6 font-medium text-center md:hidden">
