@@ -34,7 +34,7 @@ const Hero = () => {
               Vítejte na stránkách
               <br />
               alergologické ordinace{" "}
-              <span className="inline-block text-deep-purple-accent-400">
+              <span className="inline-block text-deep-purple-accent-400 bg-clip-text hover:text-transparent bg-gradient-to-br from-[#00df9a] to-[#86efac] hover:scale-110 transition ease-in-out duration-500">
                 Alermi Brno
               </span>
             </h2>
@@ -45,7 +45,7 @@ const Hero = () => {
             <div className="flex items-center">
               <a
                 href="/"
-                className=" rounded-xl bg-gradient-to-br from-[#00df9a] to-[#86efac] px-5 py-3 text-base font-bold text-white hover:scale-110 hover:shadow-lg transition ease-in-out duration-500 hover:shadow-[#838383]/50"
+                className=" rounded-xl bg-gradient-to-br from-[#00df9a] to-[#86efac] px-5 py-3 text-base font-extrabold text-white hover:scale-110 hover:shadow-lg transition ease-in-out duration-500 hover:shadow-[#838383]/50"
               >
                 Objednejte se
               </a>
