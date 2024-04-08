@@ -7,9 +7,17 @@ const Hero = () => {
     openingHoursSection.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToFooter = () => {
+    const footerSection = document.getElementById("footer");
+    footerSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
-      <div className="font-action hero-container relative m-auto flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full lg:max-w-[1240px]">
+      <section
+        id="hero"
+        className="font-action hero-container relative m-auto flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full lg:max-w-[1240px]"
+      >
         <div className="hidden lg:block inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
           <svg
             className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
@@ -44,7 +52,8 @@ const Hero = () => {
             </p>
             <div className="flex items-center">
               <a
-                href="/"
+                href="alergologie@alermi.cz"
+                onClick={scrollToFooter}
                 className=" rounded-xl bg-gradient-to-br from-[#00df9a] to-[#86efac] px-5 py-3 text-base font-extrabold text-white hover:scale-110 hover:shadow-lg transition ease-in-out duration-500 hover:shadow-[#838383]/50"
               >
                 Objednejte se
@@ -58,7 +67,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

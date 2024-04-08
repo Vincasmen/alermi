@@ -2,10 +2,18 @@ import React from "react";
 import { IoArrowUpOutline } from "react-icons/io5";
 
 export default function App() {
+  const scrollToTop = () => {
+    const topSection = document.getElementById("hero");
+    topSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <footer className="font-display top-20 relative m-auto bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-      <div className="flex items-center pulsate-fwd bg-neutral-500 cursor-pointer justify-center m-auto text-center w-10 h-10 rounded-full text-lg start-0">
-        <IoArrowUpOutline />
+    <footer
+      id="footer"
+      className="relative font-display top-20 m-auto bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
+    >
+      <div className="flex absolute inset-x-0 -top-4 items-center pulsate-fwd bg-neutral-500 cursor-pointer justify-center m-auto text-center w-10 h-10 rounded-full text-lg">
+        <IoArrowUpOutline className="w-full h-6" onClick={scrollToTop} />
       </div>
 
       {/* <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. --> */}
