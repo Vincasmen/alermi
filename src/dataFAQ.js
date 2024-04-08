@@ -41,7 +41,7 @@ const insurance = [
     id: 3,
     question: "Užitečné odkazy",
     answer: (
-      <ul className="font-display m-auto text-center">
+      <ul className="flex justify-center py-2 flex-col gap-4 items-center m-auto font-display ">
         <li>
           <a
             href="https://www.pylovasluzba.cz/"

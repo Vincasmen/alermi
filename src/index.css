@@ -21,3 +21,37 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+.pulsate-fwd-4 {
+  -webkit-animation: pulsate-fwd 4s ease-in-out infinite both;
+  animation: pulsate-fwd 4s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd-4 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd-4 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

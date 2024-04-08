@@ -31,7 +31,7 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className="FAQ-container relative m-auto flex flex-col px-4 my-16 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
+    <div className="FAQ-container relative m-auto flex flex-col px-4 my-4 lg:pt-0 lg:flex-col lg:pb-0 w-full max-w-xl lg:w-3/6">
       <div className="gap-4 ">
         {FAQdata.map((faqData, index) => (
           <div key={index} className="shadow-md p-2  my-4 rounded-md ">
@@ -48,7 +48,7 @@ const FAQ = () => {
             {activeQuestion === index && (
               <div
                 ref={answerRef}
-                className="font-display my-8 p-2 faq-answer  rounded-md transition-all duration-300"
+                className="font-display my-4 p-2 faq-answer  rounded-md transition-all duration-300"
               >
                 {faqData.answer}
               </div>
