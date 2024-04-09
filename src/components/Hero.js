@@ -42,7 +42,7 @@ const Hero = () => {
               Vítejte na stránkách
               <br />
               alergologické ordinace{" "}
-              <span className="pulsate-fwd-4 inline-block text-deep-purple-accent-400 bg-clip-text hover:text-transparent bg-gradient-to-br from-[#00df9a] to-[#86efac] hover:scale-110 transition ease-in-out duration-500">
+              <span className="pulsate-fwd-4 inline-block text-deep-purple-accent-400 bg-clip-text hover:text-transparent bg-gradient-to-br from-[#00df9a] to-[#86efac]  transition ease-in-out duration-500">
                 Alermi Brno
               </span>
             </h2>

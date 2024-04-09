@@ -31,7 +31,6 @@ const Navbar = () => {
       onClick: scrollToOpeningHours,
     },
     { id: 4, text: "Kontakt", route: "#kontakt" },
-    { id: 5, text: "Contact", route: "#contact" },
   ];
 
   return (

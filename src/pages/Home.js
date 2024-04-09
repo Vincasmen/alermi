@@ -5,6 +5,7 @@ import Openinghours from "../components/Openinghours";
 import Separator from "../components/Separator";
 import Insurance from "../components/Insurance";
 import FAQ from "../components/FAQ";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Openinghours />
       <Insurance />
       <FAQ />
+      <Contact />
     </div>
   );
 };
