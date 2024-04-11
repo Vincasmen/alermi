@@ -12,7 +12,7 @@ export default function App() {
       id="footer"
       className="relative font-display top-20 m-auto bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
     >
-      <div className="flex absolute inset-x-0 -top-4 items-center pulsate-fwd bg-neutral-500 cursor-pointer justify-center m-auto text-center w-10 h-10 rounded-full text-lg">
+      <div className="flex absolute inset-x-0 -top-4 items-center animate-bounce bg-neutral-500 cursor-pointer justify-center m-auto text-center w-10 h-10 rounded-full text-lg">
         <IoArrowUpOutline className="w-full h-6" onClick={scrollToTop} />
       </div>
 

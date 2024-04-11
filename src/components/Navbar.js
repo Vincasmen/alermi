@@ -54,7 +54,14 @@ const Navbar = () => {
 
         {/* Mobile Navigation Icon */}
         <div onClick={handleNav} className="block md:hidden">
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {nav ? (
+            <AiOutlineClose
+              className="rotate-out-center rotate-in-center"
+              size={20}
+            />
+          ) : (
+            <AiOutlineMenu className="rotate-in-center" size={20} />
+          )}
         </div>
 
         {/* Mobile Navigation Menu */}

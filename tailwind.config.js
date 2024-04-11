@@ -7,6 +7,9 @@ module.exports = {
         action: ["Prompt"],
         display: ['"Roboto"'],
       },
+      animation: {
+        "spin-fast": "spin 0.5s ",
+      },
     },
   },
   plugins: [],
