@@ -4,9 +4,9 @@ const Openinghours = () => {
   return (
     <section
       id="openingHours"
-      className="openingHours-container flex flex-col lg:h-screen p-4 m-4 w-full max-w-xl mx-auto gap-8"
+      className="openingHours-container flex flex-col  w-full px-4 max-w-xl mx-auto gap-8"
     >
-      <h2 className="font-action text-3xl font-bold mb-4 text-center">
+      <h2 className="font-action text-3xl font-bold my-4 text-center">
         Otevírací doba ordinace
       </h2>
       <table className="font-display w-full border-collapse border border-gray-300 shadow-md">
@@ -58,7 +58,7 @@ const Openinghours = () => {
           </tr>
         </tbody>
       </table>
-      <div className="">
+      <div>
         <p>
           Prosíme o objednání po telefonické domluvě, telefonická domluva i v
           případě akutních stavů.
