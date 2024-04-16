@@ -5,10 +5,10 @@ const About = () => {
   return (
     <div
       id="aboutUs"
-      className=" about-container 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 py-9 px-4"
+      className=" about-container w-full px-4 2xl:container 2xl:mx-auto lg:pt-16 lg:px-20 md:py-12 md:px-6 my-9 "
     >
-      <div className="flex flex-col lg:flex-row-reverse m-auto justify-between">
-        <div className="w-11/12 md:w-3/5 m-auto lg:m-0 lg:w-5/12 flex flex-col justify-center">
+      <div className="flex flex-col w-full lg:flex-row-reverse m-auto justify-between">
+        <div className=" md:w-3/5 m-auto lg:m-0 lg:w-5/12 flex flex-col justify-center">
           <h1 className="font-action text-3xl lg:text-4xl font-bold leading-9 text-gray-800">
             O nás
           </h1>
@@ -20,7 +20,7 @@ const About = () => {
             <br />
           </p>
         </div>
-        <div className="m-auto w-11/12  md:w-3/5 lg:m-0 lg:w-5/12">
+        <div className="m-auto md:w-3/5 lg:m-0 lg:w-5/12">
           <img
             className="clip w-full h-full rounded-md"
             src={About_pic1}
@@ -53,7 +53,7 @@ const About = () => {
               src="https://i.ibb.co/zHjXqg4/Rectangle-118.png"
               alt="Alexa featured Img"
             />
-            <p className="font-display font-medium text-xl text-center leading-5 text-gray-800 mt-4">
+            <p className="font-display font-medium text-xl text-center leading-5 text-gray-800 my-2">
               MUDr. Ivana Minaříková
             </p>
           </div>
@@ -68,7 +68,7 @@ const About = () => {
               src="https://i.ibb.co/NrWKJ1M/Rectangle-119.png"
               alt="Olivia featured Img"
             />
-            <p className="font-display font-medium text-xl text-center leading-5 text-gray-800 mt-4">
+            <p className="font-display font-medium text-xl text-center leading-5 text-gray-800 my-2">
               Olga Pařízková
             </p>
           </div>
