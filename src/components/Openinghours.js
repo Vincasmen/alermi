@@ -4,7 +4,7 @@ const Openinghours = () => {
   return (
     <section
       id="openingHours"
-      className="openingHours-container flex flex-col  w-full px-4 max-w-xl mx-auto gap-8"
+      className="openingHours-container flex flex-col w-full px-4 md:p-0  max-w-xl mx-auto gap-8"
     >
       <h2 className="font-action text-3xl font-bold my-4 text-center">
         Otevírací doba ordinace
