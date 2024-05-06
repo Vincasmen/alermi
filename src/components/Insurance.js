@@ -7,12 +7,12 @@ const Insurance = () => {
       <h1 className="my-5 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
         Smluvní pojišťovny
       </h1>
-      <div className="flex flex-col md:flex-row w-3/4 justify-center items-center m-auto gap-6">
+      <div className="flex flex-col md:flex-row md:flex-wrap m-auto gap-6">
         {/* Mapování dat z komponenty Data */}
         {Data.map((insuranceItem) => (
           <div
             key={insuranceItem.id}
-            className="flex shadow-lg flex-col items-center p-4 w-full m-auto rounded-md"
+            className="flex shadow-lg flex-col items-center max-w-3/4 p-4 m-auto rounded-md"
           >
             {" "}
             <a
